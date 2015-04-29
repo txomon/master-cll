@@ -8,6 +8,6 @@ NET "cuenta[3]" LOC = L14;
 NET "modulo[2]" LOC = C14;
 NET "modulo[1]" LOC = D14;
 NET "modulo[0]" LOC = A10;
-NET "clock" LOC = L15;
+NET "clk" LOC = L15;
 NET "cuenta_fin" LOC = N12;
 NET "direccion" LOC = N4;

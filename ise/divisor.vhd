@@ -5,8 +5,9 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 
 entity divisor is
-    Port ( clock_in 	: in  STD_LOGIC;
+    Port ( clk 	   : in  STD_LOGIC;
 			  modulo 	: in  STD_LOGIC_VECTOR(2 downto 0);
+			  ce        : in  STD_LOGIC;
            clock_out : out STD_LOGIC);
 end divisor;
 
@@ -18,10 +19,12 @@ architecture codigo of divisor is
 	
 begin
 	
-	process (clock_in) 
+	process (clk) 
 	begin
-		if clock_in='1' and clock_in'event then
-			count <= count + 1;
+		if clk='1' and clk'event then
+			if ce='1' then
+				count <= count + 1;
+			end if;
 		end if;
 	end process;
 
