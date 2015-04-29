@@ -1,0 +1,13 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "cuenta[0]" LOC = U18;
+NET "cuenta[1]" LOC = M14;
+NET "cuenta[2]" LOC = N14;
+NET "cuenta[3]" LOC = L14;
+NET "modulo[2]" LOC = C14;
+NET "modulo[1]" LOC = D14;
+NET "modulo[0]" LOC = A10;
+NET "clock" LOC = L15;
+NET "cuenta_fin" LOC = N12;
+NET "direccion" LOC = N4;
