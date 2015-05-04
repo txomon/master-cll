@@ -18,7 +18,9 @@
 --
 ----------------------------------------------------------------------------------
 library IEEE;
+library work;
 use IEEE.STD_LOGIC_1164.ALL;
+use work.master_package.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -40,23 +42,6 @@ end master;
 
 architecture Behavioral of master is
 
-	COMPONENT contador_sinc
-	PORT(
-		clock : IN std_logic;
-		direccion : IN std_logic;          
-		cuenta_fin : OUT std_logic;
-		cuenta : OUT std_logic_vector(3 downto 0)
-		);
-	END COMPONENT;
-
-	COMPONENT divisor
-	PORT(
-		clk: IN std_logic;
-		modulo : IN std_logic_vector(2 downto 0);          
-		ce : IN std_logic;
-		clock_out : OUT std_logic
-		);
-	END COMPONENT;
 	signal int_clk : std_logic;
 begin
 

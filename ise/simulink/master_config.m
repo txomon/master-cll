@@ -70,9 +70,10 @@ function master_config(this_block)
 
   %    this_block.addFile('');
   %    this_block.addFile('');
-  this_block.addFile('../master.vhd');
   this_block.addFile('../contador_sinc.vhd');
   this_block.addFile('../divisor.vhd');
+  this_block.addFile('../master_package.vhd');
+  this_block.addFile('../master.vhd');
 
 return;
 
