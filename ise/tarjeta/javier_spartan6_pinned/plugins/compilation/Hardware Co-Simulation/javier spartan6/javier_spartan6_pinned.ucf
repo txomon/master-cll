@@ -1,0 +1,22 @@
+#
+# Filename:    javier_spartan6_pinned.ucf
+# 
+# Description: Defines the clock input pin, clock speed, and
+#              non-memory mapped ports for the
+#              javier spartan6
+#
+
+NET "sys_clk" LOC = "L15";
+NET "sys_clk" TNM_NET = "hwcosim_sys_clk";
+TIMESPEC "TS_hwcosim_sys_clk" = PERIOD "hwcosim_sys_clk" 100 MHz HIGH 50%;
+
+# Non-memory mapped port definitions.
+NET modulo(0) LOC = "C14"; # modulo contingent
+NET modulo(1) LOC = "D14"; # modulo contingent
+NET modulo(2) LOC = "A10"; # modulo contingent
+NET direccion LOC = "N4"; # direccion contingent
+NET cuenta_fin LOC = "N12"; # cuenta_fin contingent
+NET cuenta(0) LOC = "L14"; # cuenta contingent
+NET cuenta(1) LOC = "N14"; # cuenta contingent
+NET cuenta(2) LOC = "M14"; # cuenta contingent
+NET cuenta(3) LOC = "U18"; # cuenta contingent

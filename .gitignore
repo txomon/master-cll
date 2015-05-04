@@ -110,3 +110,5 @@ planAhead_pid*.debug
 *.fromHdl.tcl
 *.udo
 ise/simulink/bitstream/
+ise/simulink/netlist/
+*.autosave
