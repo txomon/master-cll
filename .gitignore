@@ -112,3 +112,4 @@ planAhead_pid*.debug
 ise/simulink/bitstream/
 ise/simulink/netlist/
 *.autosave
+ise/simulink/modelsim/
