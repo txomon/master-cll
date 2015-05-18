@@ -113,3 +113,5 @@ ise/simulink/bitstream/
 ise/simulink/netlist/
 *.autosave
 ise/simulink/modelsim/
+/koldo/slprj/
+*.asv
