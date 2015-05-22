@@ -13,3 +13,4 @@ Ts2 = Ts/150;
 % Names in the simulink model...
 T2 = Ts1;
 CT2_tust = c2d(C, Ts1, 'tustin');
+G_tust = c2d(G, Ts1, 'tustin');

@@ -71,14 +71,16 @@ function controller_config(this_block)
 
   %    this_block.addFile('');
   %    this_block.addFile('');
+  this_block.addFile('ieee_proposed/standard_additions.vhd');
   this_block.addFile('ieee_proposed/numeric_std_additions.vhd');
-  this_block.addFile('ieee_proposed/standard_additions_c.vhd');
+  this_block.addFile('ieee_proposed/standard_textio_additions.vhd');
   this_block.addFile('ieee_proposed/std_logic_1164_additions.vhd');
-  this_block.addFile('ieee_proposed/numeric_std_unsigned_c.vhd');
-  this_block.addFile('ieee_proposed/standard_textio_additions_c.vhd');
-  this_block.addFile('ieee_proposed/env_c.vhd');
+  this_block.addFile('ieee_proposed/numeric_std_unsigned.vhd');
+  this_block.addFile('ieee_proposed/fixed_float_types.vhd');
+  this_block.addFile('ieee_proposed/fixed_pkg.vhd');
+  this_block.addFile('ieee_proposed/float_pkg.vhd');
+  this_block.addFile('ieee_proposed/env.vhd');
   this_block.addFile('controller.vhd');
-
 return;
 
 

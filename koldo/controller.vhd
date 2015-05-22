@@ -19,13 +19,13 @@
 ----------------------------------------------------------------------------------
 
 library IEEE;
-library ieee_proposed;
+library work;
 
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use ieee_proposed.fixed_float_types.all;
-use ieee_proposed.fixed_pkg.all;
-use ieee_proposed.float_pkg.all;
+use work.fixed_float_types.all;
+use work.fixed_pkg.all;
+use work.float_pkg.all;
 
 entity controller is
     Port ( in_signal : in STD_LOGIC_VECTOR (11 downto 0);
