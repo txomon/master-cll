@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.124"
+    ComputedModelVersion    "1.146"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [441.0, 20.0, 960.0, 1040.0]
+      Location		      [960.0, 0.0, 960.0, 1040.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -66,8 +66,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[908.0, 864.0]
-	ZoomFactor		[1.0]
-	Offset			[4.75, -368.0]
+	ZoomFactor		[1.0277372262773723]
+	Offset			[30.649147727272652, -219.43181818181824]
       }
     }
   }
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Docencia"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon May 25 17:12:09 2015"
-  RTWModifiedTimeStamp	  354470779
-  ModelVersionFormat	  "1.%<AutoIncrement:124>"
+  LastModifiedDate	  "Mon May 25 20:10:43 2015"
+  RTWModifiedTimeStamp	  354477301
+  ModelVersionFormat	  "1.%<AutoIncrement:146>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -861,7 +861,7 @@ Model {
   }
   System {
     Name		    "simulink_control_sysgen_alumnos1"
-    Location		    [441, 20, 1401, 1060]
+    Location		    [960, 0, 1920, 1040]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -873,9 +873,9 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "102"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "92"
+    SIDHighWatermark	    "101"
     Block {
       BlockType		      Reference
       Name		      " System Generator"
@@ -934,10 +934,10 @@ Model {
     Block {
       BlockType		      Reference
       Name		      "Black Box"
-      SID		      "92"
+      SID		      "101"
       Ports		      [3, 1]
-      Position		      [335, 364, 445, 446]
-      ZOrder		      5
+      Position		      [490, 359, 580, 411]
+      ZOrder		      14
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/Black Box"
       SourceType	      "Xilinx Black Box Block"
@@ -946,24 +946,24 @@ Model {
       "tor. This information is provided through a Matlab function.<br><br>When \"Simulation mode\" is set to \"Inactiv"
       "e\", you will typically want to provide a separate simulation model by using a Simulation Multiplexer.<br>When \""
       "Simulation mode\" is set to \"External co-simulator\", you must include a ModelSim block in the design."
-      init_code		      "controller_config"
-      sim_method	      "Inactive"
+      init_code		      "blackbox_wrapper_config"
+      sim_method	      "ISE Simulator"
       verbose		      off
       xl_use_area	      off
       xl_area		      "[0,0,0,0,0,0,0]"
       has_advanced_control    "0"
       sggui_pos		      "-1,-1,-1,-1"
       block_type	      "blackbox2"
-      sg_icon_stat	      "110,82,3,1,white,blue,0,48c3c3af,right,,[ ],[ ]"
-      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 110 110 0 0 ],[0 0 82 82 0 ],[0.77 "
-      "0.82 0.91 ]);\nplot([0 110 110 0 0 ],[0 0 82 82 0 ]);\npatch([30.525 46.42 57.42 68.42 79.42 57.42 41.525 30.525"
-      " ],[53.21 53.21 64.21 53.21 64.21 64.21 64.21 53.21 ],[1 1 1 ]);\npatch([41.525 57.42 46.42 30.525 41.525 ],[42."
-      "21 42.21 53.21 53.21 42.21 ],[0.931 0.946 0.973 ]);\npatch([30.525 46.42 57.42 41.525 30.525 ],[31.21 31.21 42.2"
-      "1 42.21 31.21 ],[1 1 1 ]);\npatch([41.525 79.42 68.42 57.42 46.42 30.525 41.525 ],[20.21 20.21 31.21 20.21 31.21"
-      " 31.21 20.21 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin ico"
-      "n text');\ncolor('black');port_label('input',1,'in_signal');\ncolor('black');port_label('input',2,'ref_signal');"
-      "\ncolor('black');port_label('input',3,'rst');\ncolor('black');port_label('output',1,'out_signal');\nfprintf('','"
-      "COMMENT: end icon text');"
+      sg_icon_stat	      "90,52,3,1,white,blue,0,4235c655,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 90 90 0 0 ],[0 0 52 52 0 ],[0.77 0."
+      "82 0.91 ]);\nplot([0 90 90 0 0 ],[0 0 52 52 0 ]);\npatch([29.425 39.54 46.54 53.54 60.54 46.54 36.425 29.425 ],["
+      "33.77 33.77 40.77 33.77 40.77 40.77 40.77 33.77 ],[1 1 1 ]);\npatch([36.425 46.54 39.54 29.425 36.425 ],[26.77 2"
+      "6.77 33.77 33.77 26.77 ],[0.931 0.946 0.973 ]);\npatch([29.425 39.54 46.54 36.425 29.425 ],[19.77 19.77 26.77 26"
+      ".77 19.77 ],[1 1 1 ]);\npatch([36.425 60.54 53.54 46.54 39.54 29.425 36.425 ],[12.77 12.77 19.77 12.77 19.77 19."
+      "77 12.77 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon te"
+      "xt');\ncolor('black');port_label('input',1,'rst');\ncolor('black');port_label('input',2,'setpoint');\ncolor('bla"
+      "ck');port_label('input',3,'y');\ncolor('black');port_label('output',1,'u');\nfprintf('','COMMENT: end icon text'"
+      ");"
     }
     Block {
       BlockType		      Reference
@@ -1041,7 +1041,7 @@ Model {
       Name		      "FT planta2"
       SID		      "91"
       Ports		      [1, 1]
-      Position		      [790, 387, 885, 423]
+      Position		      [790, 367, 885, 403]
       ZOrder		      4
       LibraryVersion	      "1.108"
       SourceBlock	      "cstblocks/LTI System"
@@ -1054,7 +1054,7 @@ Model {
       Name		      "Gateway In1"
       SID		      "45"
       Ports		      [1, 1]
-      Position		      [130, 440, 215, 460]
+      Position		      [135, 450, 285, 480]
       ZOrder		      -8
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/Gateway In"
@@ -1065,7 +1065,7 @@ Model {
       gui_display_data_type   "Fixed-point"
       arith_type	      "Signed  (2's comp)"
       n_bits		      "12"
-      bin_pt		      "1"
+      bin_pt		      "10"
       preci_type	      "Single"
       exp_width		      "8"
       frac_width	      "24"
@@ -1083,17 +1083,17 @@ Model {
       inherit_from_input      off
       hdl_port		      "on"
       has_advanced_control    "0"
-      sggui_pos		      "-1,-1,-1,-1"
+      sggui_pos		      "1127,312,348,604"
       block_type	      "gatewayin"
-      sg_icon_stat	      "85,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
-      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 85 85 0 0 ],[0 0 20 20 0 ],[0.95 0."
-      "93 0.65 ]);\nplot([0 85 85 0 0 ],[0 0 20 20 0 ]);\npatch([37.55 40.44 42.44 44.44 46.44 42.44 39.55 37.55 ],[12."
-      "22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([39.55 42.44 40.44 37.55 39.55 ],[10.22 10.22 1"
-      "2.22 12.22 10.22 ],[0.985 0.979 0.895 ]);\npatch([37.55 40.44 42.44 39.55 37.55 ],[8.22 8.22 10.22 10.22 8.22 ],"
-      "[1 1 1 ]);\npatch([39.55 46.44 44.44 42.44 40.44 37.55 39.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.97"
-      "9 0.895 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
-      "port_label('input',1,'\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfp"
-      "rintf('','COMMENT: end icon text');"
+      sg_icon_stat	      "150,30,1,1,white,yellow,1,d35bf8a1,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 150 150 0 0 ],[0 0 30 30 0 ],[0.95 "
+      "0.93 0.65 ]);\nplot([0 150 150 0 0 ],[0 0 30 30 0 ]);\npatch([66.1 71.88 75.88 79.88 83.88 75.88 70.1 66.1 ],[19"
+      ".44 19.44 23.44 19.44 23.44 23.44 23.44 19.44 ],[1 1 1 ]);\npatch([70.1 75.88 71.88 66.1 70.1 ],[15.44 15.44 19."
+      "44 19.44 15.44 ],[0.985 0.979 0.895 ]);\npatch([66.1 71.88 75.88 70.1 66.1 ],[11.44 11.44 15.44 15.44 11.44 ],[1"
+      " 1 1 ]);\npatch([70.1 83.88 79.88 75.88 71.88 66.1 70.1 ],[7.44 7.44 11.44 7.44 11.44 11.44 7.44 ],[0.985 0.979 "
+      "0.895 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');po"
+      "rt_label('input',1,'dbl');\ncolor('black');port_label('output',1,'gw_in_outport');\nfprintf('','COMMENT: end ico"
+      "n text');"
       Port {
 	PortNumber		1
 	Name			"yk"
@@ -1106,7 +1106,7 @@ Model {
       Name		      "Gateway In2"
       SID		      "50"
       Ports		      [1, 1]
-      Position		      [130, 349, 215, 371]
+      Position		      [175, 339, 260, 361]
       ZOrder		      -9
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/Gateway In"
@@ -1158,7 +1158,7 @@ Model {
       Name		      "Gateway In3"
       SID		      "51"
       Ports		      [1, 1]
-      Position		      [130, 394, 215, 416]
+      Position		      [165, 394, 290, 416]
       ZOrder		      -10
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/Gateway In"
@@ -1169,11 +1169,11 @@ Model {
       gui_display_data_type   "Fixed-point"
       arith_type	      "Signed  (2's comp)"
       n_bits		      "12"
-      bin_pt		      "1"
+      bin_pt		      "9"
       preci_type	      "Single"
       exp_width		      "8"
       frac_width	      "24"
-      quantization	      "Round  (unbiased: +/- Inf)"
+      quantization	      "Truncate"
       overflow		      "Saturate"
       period		      "2E-3"
       dbl_ovrd		      off
@@ -1187,17 +1187,17 @@ Model {
       inherit_from_input      off
       hdl_port		      "on"
       has_advanced_control    "0"
-      sggui_pos		      "749,90,348,604"
+      sggui_pos		      "765,303,348,604"
       block_type	      "gatewayin"
-      sg_icon_stat	      "85,22,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
-      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 85 85 0 0 ],[0 0 22 22 0 ],[0.95 0."
-      "93 0.65 ]);\nplot([0 85 85 0 0 ],[0 0 22 22 0 ]);\npatch([35.325 39.66 42.66 45.66 48.66 42.66 38.325 35.325 ],["
-      "14.33 14.33 17.33 14.33 17.33 17.33 17.33 14.33 ],[1 1 1 ]);\npatch([38.325 42.66 39.66 35.325 38.325 ],[11.33 1"
-      "1.33 14.33 14.33 11.33 ],[0.985 0.979 0.895 ]);\npatch([35.325 39.66 42.66 38.325 35.325 ],[8.33 8.33 11.33 11.3"
-      "3 8.33 ],[1 1 1 ]);\npatch([38.325 48.66 45.66 42.66 39.66 35.325 38.325 ],[5.33 5.33 8.33 5.33 8.33 8.33 5.33 ]"
-      ",[0.985 0.979 0.895 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncol"
-      "or('black');port_label('input',1,'\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output'"
-      ",1,' ');\nfprintf('','COMMENT: end icon text');"
+      sg_icon_stat	      "125,22,1,1,white,yellow,1,d35bf8a1,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 125 125 0 0 ],[0 0 22 22 0 ],[0.95 "
+      "0.93 0.65 ]);\nplot([0 125 125 0 0 ],[0 0 22 22 0 ]);\npatch([55.325 59.66 62.66 65.66 68.66 62.66 58.325 55.325"
+      " ],[14.33 14.33 17.33 14.33 17.33 17.33 17.33 14.33 ],[1 1 1 ]);\npatch([58.325 62.66 59.66 55.325 58.325 ],[11."
+      "33 11.33 14.33 14.33 11.33 ],[0.985 0.979 0.895 ]);\npatch([55.325 59.66 62.66 58.325 55.325 ],[8.33 8.33 11.33 "
+      "11.33 8.33 ],[1 1 1 ]);\npatch([58.325 68.66 65.66 62.66 59.66 55.325 58.325 ],[5.33 5.33 8.33 5.33 8.33 8.33 5."
+      "33 ],[0.985 0.979 0.895 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n"
+      "color('black');port_label('input',1,'dbl');\ncolor('black');port_label('output',1,'gw_in_outport');\nfprintf('',"
+      "'COMMENT: end icon text');"
       Port {
 	PortNumber		1
 	Name			"SP"
@@ -1210,7 +1210,7 @@ Model {
       Name		      "Gateway Out"
       SID		      "46"
       Ports		      [1, 1]
-      Position		      [640, 392, 760, 418]
+      Position		      [620, 372, 740, 398]
       ZOrder		      -11
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/Gateway Out"
@@ -1230,15 +1230,15 @@ Model {
       has_advanced_control    "0"
       sggui_pos		      "-1,-1,-1,-1"
       block_type	      "gatewayout"
-      sg_icon_stat	      "120,26,1,1,white,yellow,1,cc31b7ac,right,,[ ],[ ]"
+      sg_icon_stat	      "120,26,1,1,white,yellow,1,c717efaa,right,,[ ],[ ]"
       sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 120 120 0 0 ],[0 0 26 26 0 ],[0.95 "
       "0.93 0.65 ]);\nplot([0 120 120 0 0 ],[0 0 26 26 0 ]);\npatch([53.325 57.66 60.66 63.66 66.66 60.66 56.325 53.325"
       " ],[16.33 16.33 19.33 16.33 19.33 19.33 19.33 16.33 ],[1 1 1 ]);\npatch([56.325 60.66 57.66 53.325 56.325 ],[13."
       "33 13.33 16.33 16.33 13.33 ],[0.985 0.979 0.895 ]);\npatch([53.325 57.66 60.66 56.325 53.325 ],[10.33 10.33 13.3"
       "3 13.33 10.33 ],[1 1 1 ]);\npatch([56.325 66.66 63.66 60.66 57.66 53.325 56.325 ],[7.33 7.33 10.33 7.33 10.33 10"
       ".33 7.33 ],[0.985 0.979 0.895 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon te"
-      "xt');\ncolor('black');port_label('input',1,' ');\ncolor('black');port_label('output',1,'\\fontsize{11pt}\\bf Out"
-      " ','texmode','on');\nfprintf('','COMMENT: end icon text');"
+      "xt');\ncolor('black');port_label('input',1,'gw_out_inport');\ncolor('black');port_label('output',1,'dbl');\nfpri"
+      "ntf('','COMMENT: end icon text');"
     }
     Block {
       BlockType		      Mux
@@ -1260,37 +1260,6 @@ Model {
       ShowName		      off
       Inputs		      "3"
       DisplayOption	      "bar"
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "Reinterpret"
-      SID		      "83"
-      Ports		      [1, 1]
-      Position		      [470, 386, 605, 424]
-      ZOrder		      -14
-      LibraryVersion	      "1.2"
-      SourceBlock	      "xbsIndex_r4/Reinterpret"
-      SourceType	      "Xilinx Type Reinterpreter Block"
-      infoedit		      "Changes signal type without altering the binary representation.   You can change the signal bet"
-      "ween signed and unsigned, and relocate the binary point.<br><br>Hardware notes: In hardware this block costs not"
-      "hing.<br><br>Example:  Suppose the input is 6 bits wide, signed, with 2 fractional bits, and the output is force"
-      "d to unsigned with 0 fractional bits.  Then an input of -2.0 (1110.00 in binary 2's complement) becomes an outpu"
-      "t of 56 (111000 in binary)."
-      force_arith_type	      on
-      arith_type	      "Signed  (2's comp)"
-      force_bin_pt	      on
-      bin_pt		      "9"
-      has_advanced_control    "0"
-      sggui_pos		      "1405,307,336,336"
-      block_type	      "reinterpret"
-      sg_icon_stat	      "135,38,1,1,white,blue,0,6b04d0b0,right,,[ ],[ ]"
-      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 135 135 0 0 ],[0 0 38 38 0 ],[0.77 "
-      "0.82 0.91 ]);\nplot([0 135 135 0 0 ],[0 0 38 38 0 ]);\npatch([55.875 63.1 68.1 73.1 78.1 68.1 60.875 55.875 ],[2"
-      "4.55 24.55 29.55 24.55 29.55 29.55 29.55 24.55 ],[1 1 1 ]);\npatch([60.875 68.1 63.1 55.875 60.875 ],[19.55 19.5"
-      "5 24.55 24.55 19.55 ],[0.931 0.946 0.973 ]);\npatch([55.875 63.1 68.1 60.875 55.875 ],[14.55 14.55 19.55 19.55 1"
-      "4.55 ],[1 1 1 ]);\npatch([60.875 78.1 73.1 68.1 63.1 55.875 60.875 ],[9.55 9.55 14.55 9.55 14.55 14.55 9.55 ],[0"
-      ".931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\nco"
-      "lor('black');disp('reinterpret');\nfprintf('','COMMENT: end icon text');"
     }
     Block {
       BlockType		      SubSystem
@@ -1404,7 +1373,7 @@ Model {
       SID		      "84"
       Tag		      "STV Subsys"
       Ports		      [0, 1]
-      Position		      [20, 385, 85, 425]
+      Position		      [45, 385, 110, 425]
       ZOrder		      -16
       CopyFcn		      "sigbuilder_block('copy');"
       DeleteFcn		      "sigbuilder_block('delete');"
@@ -1614,9 +1583,11 @@ Model {
       BlockType		      Step
       Name		      "Step"
       SID		      "54"
-      Position		      [65, 340, 95, 370]
+      Position		      [65, 330, 95, 360]
       ZOrder		      -18
       Time		      "0.001"
+      Before		      "1"
+      After		      "0"
       SampleTime	      "0"
     }
     Block {
@@ -1648,33 +1619,6 @@ Model {
       SaturateOnIntegerOverflow	off
     }
     Block {
-      BlockType		      Reference
-      Name		      "WaveScope"
-      SID		      "62"
-      Ports		      []
-      Position		      [127, 17, 198, 79]
-      ZOrder		      -21
-      LibraryVersion	      "1.2"
-      UserDataPersistent      on
-      UserData		      "DataTag7"
-      SourceBlock	      "xbsIndex_r4/WaveScope"
-      SourceType	      "Xilinx WaveScope Block"
-      infoedit		      "WaveScope"
-      has_advanced_control    "0"
-      sggui_pos		      "-1,-1,-1,-1"
-      block_type	      "wavescope"
-      sg_icon_stat	      "71,62,-1,-1,blue,white,0,07734,right,,[ ],[ ]"
-      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 71 71 0 0 ],[0 0 62 62 0 ],[1 1 1 ]"
-      ");\nplot([0 71 71 0 0 ],[0 0 62 62 0 ]);\npatch([17.2 28.76 36.76 44.76 52.76 36.76 25.2 17.2 ],[39.88 39.88 47."
-      "88 39.88 47.88 47.88 47.88 39.88 ],[0.839 0.874 0.937 ]);\npatch([25.2 36.76 28.76 17.2 25.2 ],[31.88 31.88 39.8"
-      "8 39.88 31.88 ],[0.77 0.82 0.91 ]);\npatch([17.2 28.76 36.76 25.2 17.2 ],[23.88 23.88 31.88 31.88 23.88 ],[0.839"
-      " 0.874 0.937 ]);\npatch([25.2 52.76 44.76 36.76 28.76 17.2 25.2 ],[15.88 15.88 23.88 15.88 23.88 23.88 15.88 ],["
-      "0.77 0.82 0.91 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\nfprintf("
-      "'','COMMENT: end icon text');color('green');\nplot([0,0.42,0.57,1]*w,[0.62, 0.62, 0.38,0.38]*h);\nplot([0,0.42,0"
-      ".57,1]*w,[0.38, 0.38, 0.62,0.62]*h);\ncolor('red');\nplot([0,0.3,0.3,0.47,0.47,1]*w,[0.15,0.15,0.3,0.3,0.15,0.15"
-      "]*h);\ncolor('black');\ntext(0.08*w,0.5*h,'Wave');\ntext(0.56*w,0.5*h,'Scope');\n"
-    }
-    Block {
       BlockType		      ZeroOrderHold
       Name		      "Zero-Order\nHold4"
       SID		      "31"
@@ -1699,7 +1643,7 @@ Model {
       Position		      [750, 214, 780, 246]
       ZOrder		      -24
       Floating		      off
-      Location		      [9, 56, 953, 1031]
+      Location		      [458, 220, 1402, 725]
       Open		      off
       NumInputPorts	      "1"
       List {
@@ -1717,7 +1661,7 @@ Model {
 	MarkerStyles		"none|none|none|none|none|none"
       }
       ShowLegends	      on
-      LegendLocations	      "0.80385     0.90889     0.16419    0.052991"
+      LegendLocations	      "0.80385     0.88423     0.16419     0.10231"
       SaveName		      "ScopeData1"
       DataFormat	      "StructureWithTime"
       LimitDataPoints	      off
@@ -1738,6 +1682,16 @@ Model {
       List {
 	ListType		AxesTitles
 	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
       }
       ShowLegends	      off
       SaveName		      "ScopeData2"
@@ -1766,7 +1720,7 @@ Model {
       Position		      [750, 109, 780, 141]
       ZOrder		      -27
       Floating		      off
-      Location		      [583, 417, 1226, 984]
+      Location		      [46, 408, 689, 975]
       Open		      off
       NumInputPorts	      "1"
       List {
@@ -1783,7 +1737,8 @@ Model {
 	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
 	MarkerStyles		"none|none|none|none|none|none"
       }
-      ShowLegends	      off
+      ShowLegends	      on
+      LegendLocations	      "0.75402     0.81746     0.19907     0.11875"
       DataFormat	      "StructureWithTime"
       LimitDataPoints	      off
       MaxDataPoints	      "500000"
@@ -1907,7 +1862,7 @@ Model {
     Line {
       SrcBlock		      "Step"
       SrcPort		      1
-      Points		      [15, 0]
+      Points		      [12, 0; 0, 5]
       DstBlock		      "Gateway In2"
       DstPort		      1
     }
@@ -1927,48 +1882,36 @@ Model {
       Name		      "SP"
       SrcBlock		      "Gateway In3"
       SrcPort		      1
-      Points		      [43, 0; 0, -25]
+      Points		      [77, 0; 0, -20]
       DstBlock		      "Black Box"
-      DstPort		      1
+      DstPort		      2
     }
     Line {
       Name		      "yk"
       SrcBlock		      "Gateway In1"
       SrcPort		      1
-      Points		      [43, 0; 0, -45]
+      Points		      [153, 0; 0, -65]
       DstBlock		      "Black Box"
-      DstPort		      2
+      DstPort		      3
     }
     Line {
       Name		      "rst"
       SrcBlock		      "Gateway In2"
       SrcPort		      1
-      Points		      [91, 0; 0, 70]
+      Points		      [100, 0; 0, 20]
       DstBlock		      "Black Box"
-      DstPort		      3
-    }
-    Line {
-      SrcBlock		      "Black Box"
-      SrcPort		      1
-      DstBlock		      "Reinterpret"
-      DstPort		      1
-    }
-    Line {
-      SrcBlock		      "Reinterpret"
-      SrcPort		      1
-      DstBlock		      "Gateway Out"
       DstPort		      1
     }
     Line {
       SrcBlock		      "Gateway Out"
       SrcPort		      1
-      Points		      [9, 0]
+      Points		      [29, 0]
       Branch {
 	DstBlock		"FT planta2"
 	DstPort			1
       }
       Branch {
-	Points			[0, -141; -149, 0; 0, -19]
+	Points			[0, -121; -149, 0; 0, -19]
 	DstBlock		"Mux1"
 	DstPort			3
       }
@@ -1976,17 +1919,23 @@ Model {
     Line {
       SrcBlock		      "FT planta2"
       SrcPort		      1
-      Points		      [9, 0]
+      Points		      [8, 0]
       Branch {
-	Points			[0, 77; -784, 0]
+	Points			[0, 122; -780, 0; 0, -42]
 	DstBlock		"Gateway In1"
 	DstPort			1
       }
       Branch {
-	Points			[0, -234; -267, 0; 0, -26]
+	Points			[1, 0; 0, -214; -267, 0; 0, -26]
 	DstBlock		"Mux"
 	DstPort			4
       }
+    }
+    Line {
+      SrcBlock		      "Black Box"
+      SrcPort		      1
+      DstBlock		      "Gateway Out"
+      DstPort		      1
     }
     Annotation {
       SID		      "87"
@@ -1995,7 +1944,7 @@ Model {
   }
 }
 MatData {
-  NumRecords		  8
+  NumRecords		  7
   DataRecord {
     Tag			    DataTag0
     Data		    "  %)30     .    >\"\\   8    (     @         %    \"     $    !     0         %  0 !@    $    ,    <V%V"
@@ -2224,7 +2173,7 @@ MatData {
     "    \"0    @           #P/PX    P    !@    @    &          4    (               !          D         #@   #     & "
     "   \"     8         !0    @               $         \"0         .    .     8    (    !@         %    \"     $    !"
     "     0         )    \"        ! !K*Y #@   #@    &    \"     8         !0    @    !     0    $         \"0    @    "
-    "    0 %J@0 X    P    !@    @    &          4    (               !          D         "
+    "    0 %R@0 X    P    !@    @    &          4    (               !          D         "
   }
   DataRecord {
     Tag			    DataTag3
@@ -2307,7 +2256,7 @@ MatData {
     "    \"0    @           #P/PX    P    !@    @    &          4    (               !          D         #@   #     & "
     "   \"     8         !0    @               $         \"0         .    .     8    (    !@         %    \"     $    !"
     "     0         )    \"        ! !K*Y #@   #@    &    \"     8         !0    @    !     0    $         \"0    @    "
-    "    P &:@0 X    P    !@    @    &          4    (               !          D         "
+    "    P &B@0 X    P    !@    @    &          4    (               !          D         "
   }
   DataRecord {
     Tag			    DataTag5
@@ -2390,44 +2339,6 @@ MatData {
     "    \"0    @           #P/PX    P    !@    @    &          4    (               !          D         #@   #     & "
     "   \"     8         !0    @               $         \"0         .    .     8    (    !@         %    \"     $    !"
     "     0         )    \"        ! !K*Y #@   #@    &    \"     8         !0    @    !     0    $         \"0    @    "
-    "    P '*@0 X    P    !@    @    &          4    (               !          D         "
-  }
-  DataRecord {
-    Tag			    DataTag7
-    Data		    "  %)30     .    , L   8    (     @         %    \"     $    !     0         %  0 &0    $   #5 @  <VEG;F"
-    "%L                         &QA<W1?<V5L96-T961?<VEG;F%L      !H:6=H;&EG:'1E9%]S:6=N86QS        :&EG:&QI9VAT7W)E8W1?"
-    ":&%N9&QE<P   '-A=F5D7W!O<VET:6]N              !S879E9%]S8W)E96YS:7IE            =&EM95]L:6UI=',                  '"
-    ")E<75E<W1E9%]T:6UE7VQI;6ET<P    !E;F1T:6UE                        <W1A<G1T:6UE                     '9E<G1?;&]C    "
-    "                  !C=7)S;W)?;&]C                    8W5R<V]R7V)E:6YG7VUO=F5D         '!E<FEO9                     "
-    "    !P87-T95]B=69F97(                 6$=R:60                          %-H;W=686QU97,                   !2=6Y!=$5N"
-    "9$]F4VEM                3F5X=$-O;&]R26YD97@              &]P97)A=&EO;@                    !O<&5R871I;VY?<W1A=&4   "
-    "          =&EM95]D:7-P;&%Y7W5N:70          'AS;&ED97)?=F%L                  !S8V]P96AA;F1L90                  ;6EN"
-    "7W!E<FEO9                    '-I;75L871I;VY?=&EM90            !Y;6%X                            >6UI;@            "
-    "               '!R979I;W5S7V]P97)A=&EO;E]S=&%T90     .    V     8    (     @         %    \"     $          0     "
-    "    %  0 #0    $   \"<    :&%N9&QE         '!A<F5N=         !D:7-P;&%Y;F%M90  <&]R=&YU;0       ')A9&EX          !C"
-    ";VQO<@          ='=O<P           &9O<FUA=         !H96EG:'0         ;V9F<V5T         '-C86QE7V9A8W1O<@!.;T1A=&$   "
-    "            X    X    !@    @    &          4    (     0    $    !          D    (               .    ,     8    ("
-    "    !@         %    \"                0         )          X    P    !@    @    &          4    (               ! "
-    "         D         #@   %     &    \"     8         !0    @    !    !     $         \"0   \"           $!90       "
-    "H'U         CD        ![0 X   !     !@    @    &          4    (     0    (    !          D    0            GD    "
-    "   .\"00 X   !     !@    @    &          4    (     0    (    !          D    0              #______T>?0 X   !    "
-    " !@    @    &          4    (     0    (    !          D    0                      #P?PX    X    !@    @    &     "
-    "     4    (     0    $    !          D    (            \\#\\.    .     8    (    !@         %    \"     $    !    "
-    " 0         )    \"               #@   $     &    \"     8         !0    @    \"     0    $         \"0   !        "
-    "               /\"_#@   #@    &    \"     8         !0    @    !     0    $         \"0    @   !2&2($$'[H/PX    X "
-    "   !@    @    &          4    (     0    $    !          D    (               .    .     8    (    !@         %   "
-    " \"     $    !     0         )    \"            / _#@   #     &    \"     8         !0    @               $       "
-    "  \"0         .    ,     8    (    !          %    \"     $    #     0         0  , ;V9F  X    P    !@    @    $  "
-    "        4    (     0    (    !         !   @!O;@  #@   #     &    \"     0         !0    @    !     @    $        "
-    " $  \" &]N   .    .     8    (    !@         %    \"     $    !     0         )    \"            \"1 #@   #     & "
-    "   \"     0         !0    @    !    !     $         $  $ $Y/3D4.    .     8    (    !          %    \"     $    ' "
-    "    0         0    !P   %-405)4140 #@   '@    &    \"     $         !0    @    !     0    $         #@   $@    &  "
-    "  \"     0         !0    @    !    %     $         $    !0   !4:6UE(&EN(&UI;&QI<V5C;VYD<P     .    .     8    (   "
-    " !@         %    \"     $    !     0         )    \"               #@   #@    &    \"     8         !0    @    !  "
-    "   0    $         \"0    @           #P/PX    X    !@    @    &          4    (     0    $    !          D    (   "
-    "         \\#\\.    .     8    (    !@         %    \"     $    !     0         )    \"            !1 #@   #@    & "
-    "   \"     8         !0    @    !     0    $         \"0    @               X    X    !@    @    &          4    ( "
-    "    0    $    !          D    (            \\+\\.    .     8    (    !          %    \"     $    '     0         0"
-    "    !P   %-405)4140 "
+    "    P '2@0 X    P    !@    @    &          4    (               !          D         "
   }
 }

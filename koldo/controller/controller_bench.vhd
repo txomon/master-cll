@@ -2,10 +2,10 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   20:59:32 03/12/2015
+-- Create Date:   17:42:37 05/25/2015
 -- Design Name:   
--- Module Name:   /home/javier/proyectos/master/master-lrp/practica3/controller_bench.vhd
--- Project Name:  practica3
+-- Module Name:   C:/javier/master-cll/koldo/controller/controller_bench.vhd
+-- Project Name:  controller
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
@@ -40,24 +40,26 @@ ARCHITECTURE behavior OF controller_bench IS
     -- Component Declaration for the Unit Under Test (UUT)
  
     COMPONENT controller
-    Port ( in_signal : in STD_LOGIC_VECTOR (11 downto 0);
-           ref_signal : in STD_LOGIC_VECTOR (11 downto 0);
-           out_signal : out STD_LOGIC_VECTOR (20 downto 0);
-			  clk : in std_logic;
-			  ce : in std_logic;
-			  rst : in std_logic);
+    PORT(
+         clk : IN  std_logic;
+         ce : IN  std_logic;
+         rst : IN  std_logic;
+         y : IN  std_logic_vector(11 downto 0);
+         setpoint : IN  std_logic_vector(11 downto 0);
+         u : OUT  std_logic_vector(15 downto 0)
+        );
     END COMPONENT;
     
 
    --Inputs
-   signal in_signal : std_logic_vector(11 downto 0) := (others => '0');
-   signal ref_signal : std_logic_vector(11 downto 0) := (others => '0');
    signal clk : std_logic := '0';
-   signal rst : std_logic := '0';
    signal ce : std_logic := '0';
+   signal rst : std_logic := '0';
+   signal y : std_logic_vector(11 downto 0) := (others => '0');
+   signal setpoint : std_logic_vector(11 downto 0) := (others => '0');
 
  	--Outputs
-   signal out_signal : std_logic_vector(20 downto 0);
+   signal u : std_logic_vector(15 downto 0);
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -66,12 +68,12 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: controller PORT MAP (
-          in_signal => in_signal,
-          ref_signal => ref_signal,
-          out_signal => out_signal,
           clk => clk,
+          ce => ce,
           rst => rst,
-			 ce => ce
+          y => y,
+          setpoint => setpoint,
+          u => u
         );
 
    -- Clock process definitions
@@ -86,22 +88,20 @@ BEGIN
 
    -- Stimulus process
    stim_proc: process
-   begin		
-      -- hold reset state for 100 ns.
+   begin
       rst <= '1';
       wait for 100 ns;
       wait for clk_period*10;
       rst <= '0';
  
-      ref_signal <= (others => '0');
+      setpoint <= (others => '0');
       
       wait for 200 us;
 
-      ref_signal <= (11 => '0', others => '1');
+      setpoint <= (11 => '0', others => '1');
 		
       wait for 600 us;
-      ref_signal <= (11 => '0', others => '1');
-      --ref_signal <= (11 => '1', others => '0');
+      setpoint <= (11 => '1', others => '0');
 
       wait;
    end process;
