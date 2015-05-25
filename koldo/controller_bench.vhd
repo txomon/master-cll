@@ -40,14 +40,12 @@ ARCHITECTURE behavior OF controller_bench IS
     -- Component Declaration for the Unit Under Test (UUT)
  
     COMPONENT controller
-    PORT(
-         in_signal : IN  std_logic_vector(11 downto 0);
-         ref_signal : IN  std_logic_vector(11 downto 0);
-         out_signal : OUT  std_logic_vector(17 downto 0);
-         clk : IN  std_logic;
-         rst : IN  std_logic;
-			ce : IN std_logic
-        );
+    Port ( in_signal : in STD_LOGIC_VECTOR (11 downto 0);
+           ref_signal : in STD_LOGIC_VECTOR (11 downto 0);
+           out_signal : out STD_LOGIC_VECTOR (20 downto 0);
+			  clk : in std_logic;
+			  ce : in std_logic;
+			  rst : in std_logic);
     END COMPONENT;
     
 
@@ -59,7 +57,7 @@ ARCHITECTURE behavior OF controller_bench IS
    signal ce : std_logic := '0';
 
  	--Outputs
-   signal out_signal : std_logic_vector(17 downto 0);
+   signal out_signal : std_logic_vector(20 downto 0);
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -95,14 +93,15 @@ BEGIN
       wait for clk_period*10;
       rst <= '0';
  
-      ref_signal <= (11 => '0', others => '1');     
+      ref_signal <= (others => '0');
       
-      wait for clk_period*250;
+      wait for 200 us;
 
-      ref_signal <= (others => '1');
+      ref_signal <= (11 => '0', others => '1');
 		
-      wait for clk_period*1000;
-      ref_signal <= (11 => '0', 10 => '0', 9 others => '1');  
+      wait for 600 us;
+      ref_signal <= (11 => '0', others => '1');
+      --ref_signal <= (11 => '1', others => '0');
 
       wait;
    end process;

@@ -30,7 +30,7 @@ use work.float_pkg.all;
 entity controller is
     Port ( in_signal : in STD_LOGIC_VECTOR (11 downto 0);
            ref_signal : in STD_LOGIC_VECTOR (11 downto 0);
-           out_signal : out STD_LOGIC_VECTOR (17 downto 0);
+           out_signal : out STD_LOGIC_VECTOR (20 downto 0);
 			  clk : in std_logic;
 			  ce : in std_logic;
 			  rst : in std_logic);
@@ -38,22 +38,22 @@ end controller;
 
 architecture Behavioral of controller is
 
-subtype a1t is sfixed(1 downto -6);
-subtype a2t is sfixed(0 downto -8);
-subtype au12t is sfixed(10 downto -6);
-subtype au1t is sfixed(18 downto -6);
-subtype au2t is sfixed(7 downto -6);
-subtype b0t is sfixed(6 downto -7);
+subtype a1t is sfixed(1 downto -10);
+subtype a2t is sfixed(1 downto -10);
+subtype b0t is sfixed(7 downto -7);
 subtype b1t is sfixed(8 downto -8);
-subtype b2t is sfixed(6 downto -8);
-subtype be012t is sfixed(9 downto -10);
+subtype b2t is sfixed(7 downto -7);
+subtype au12t is sfixed(10 downto -7);
+subtype au1t is sfixed(10 downto -10);
+subtype au2t is sfixed(8 downto -12);
+subtype be012t is sfixed(8 downto -16);
 subtype be01t is sfixed(9 downto -5);
-subtype be0t is sfixed(8 downto -5);
-subtype be1t is sfixed(10 downto -5);
-subtype be2t is sfixed(8 downto -4);
-subtype ekt is sfixed(1 downto -10);
-subtype ukt is sfixed(8 downto -9);
-subtype ykt is sfixed(2 downto -9);
+subtype be0t is sfixed(9 downto -9);
+subtype be1t is sfixed(10 downto -8);
+subtype be2t is sfixed(9 downto -9);
+subtype ekt is sfixed(2 downto -15);
+subtype ukt is sfixed(9 downto -11);
+subtype ykt is sfixed(1 downto -10);
 
 signal a1 : a1t;
 signal a2 : a2t;
